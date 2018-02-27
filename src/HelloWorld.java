@@ -19,7 +19,7 @@ public class HelloWorld {
         System.out.println(myFavNum);
         System.out.println(myString);
         System.out.println(myNumber);
-
+        System.out.println("apples");
 
 
     }
