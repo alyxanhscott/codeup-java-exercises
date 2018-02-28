@@ -6,7 +6,7 @@ public class Bob {
 
         do {
             System.out.println("Tell me something: ");
-            String response = sc.next();
+            String response = sc.nextLine();
 
             if (response.endsWith("?")) {
                 System.out.println("Sure.");
@@ -19,7 +19,7 @@ public class Bob {
             }
 
             System.out.println("Anything else? Yes or no dude..");
-        } while ("yes".equalsIgnoreCase(sc.next()));
+        } while ("yes".equalsIgnoreCase(sc.nextLine()));
 
     }
 }
