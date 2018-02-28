@@ -5,19 +5,23 @@ public class ControlFlowExercises {
         Scanner sc = new Scanner(System.in);
 
         do {
-            System.out.println("Enter a grade between 0-100: ");
-            int userGrade = sc.nextInt();
+            System.out.println("Enter a number between 1 and 7: ");
+            int userNum = sc.nextInt();
 
-            if (userGrade >= 88) {
-                System.out.println("Grade: A (100-88)");
-            } else if (userGrade <= 87 && userGrade >= 80) {
-                System.out.println("Grade: B (87-80)");
-            } else if (userGrade <= 79 && userGrade >= 67) {
-                System.out.println("Grade: C (79-67)");
-            } else if (userGrade <= 66 && userGrade >= 60) {
-                System.out.println("Grade: D (66-60)");
+            if (userNum == 1) {
+                System.out.println("Sunday");
+            } else if (userNum == 2) {
+                System.out.println("Monday");
+            } else if (userNum == 3) {
+                System.out.println("Tuesday");
+            } else if (userNum == 4) {
+                System.out.println("Wednesday");
+            } else if (userNum == 5) {
+                System.out.println("Thursday");
+            } else if (userNum == 6) {
+                System.out.println("Friday");
             } else {
-                System.out.println("Grade: F (59-0)");
+                System.out.println("Saturday");
             }
 
             System.out.println("Would you like to continue? Type yes or no: ");
