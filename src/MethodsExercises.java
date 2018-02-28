@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class MethodsExercises {
+    public static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        number(1, 10);
+        factorial();
     }
 
 //    public static int add(int x, int y) {
@@ -27,7 +27,6 @@ public class MethodsExercises {
 //    }
 
     public static int number(int min, int max) {
-        Scanner sc = new Scanner(System.in);
 
 
         System.out.println("Enter a number between 1 and 10: ");
@@ -40,6 +39,19 @@ public class MethodsExercises {
             }
 
         return usernum;
+    }
+
+    public static void factorial() {
+        do {
+            int userInput = number(1, 10);
+            long factorial = 1L;
+            for (int i = 1; i <= userInput; i++) {
+                factorial *= i;
+            }
+            System.out.println("Your factorial: " + factorial);
+            System.out.println("Continue? Y/N");
+        } while ("y".equalsIgnoreCase(sc.next()));
+
     }
 
 }
