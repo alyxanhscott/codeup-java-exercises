@@ -5,17 +5,21 @@ public class ControlFlowExercises {
         Scanner sc = new Scanner(System.in);
 
         do {
-            System.out.println("Enter a number to go up to: ");
-            int userNum = sc.nextInt();
+            System.out.println("Enter a grade between 0-100: ");
+            int userGrade = sc.nextInt();
 
-            String tableFormat = "%-6d | %-7d | %-5d%n";
-            System.out.format("number | squared | cubed%n");
-
-            for (int i = 1; i <= userNum ; i++) {
-                int squ = (int)(Math.pow(i, 2));
-                int cub = (int)(Math.pow(i, 3));
-                System.out.format(tableFormat, i, squ, cub);
+            if (userGrade >= 88) {
+                System.out.println("Grade: A (100-88)");
+            } else if (userGrade <= 87 && userGrade >= 80) {
+                System.out.println("Grade: B (87-80)");
+            } else if (userGrade <= 79 && userGrade >= 67) {
+                System.out.println("Grade: C (79-67)");
+            } else if (userGrade <= 66 && userGrade >= 60) {
+                System.out.println("Grade: D (66-60)");
+            } else {
+                System.out.println("Grade: F (59-0)");
             }
+
             System.out.println("Would you like to continue? Type yes or no: ");
         } while ("yes".equalsIgnoreCase(sc.next()));
 
