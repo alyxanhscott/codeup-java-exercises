@@ -30,7 +30,7 @@ public class MethodsExercises {
     public static int number(int min, int max) {
 
 
-        System.out.println("Enter a number between 1 and 20: ");
+        System.out.println("Enter a number between" + min +  "and" + max + ": ");
         int usernum = sc.nextInt();
 
             if (min <= usernum && max >= usernum) {
