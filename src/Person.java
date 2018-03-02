@@ -1,16 +1,18 @@
 public class Person {
-    private static String name;
 
-    public static String getName() {
-        return name;
-    }
+    private String name;
 
     public Person(String name) {
         this.name = name;
     }
 
-    public static void setName(String name) {
-        Person.name = name;
+    public String getName() {
+        return name;
+    }
+
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void sayHello() {
@@ -19,9 +21,13 @@ public class Person {
 
     public static void main(String[] args) {
 
-        Person p = new Person("Allie Scott");
+        Person p = new Person("Allie");
 
-        System.out.println(getName());
+        p.sayHello();
+
+        Person p1 = new Person("Tristan");
+
+        p1.sayHello();
 
     }
 
