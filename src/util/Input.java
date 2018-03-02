@@ -45,9 +45,9 @@ public class Input {
         return usernum;
     }
 
-    public void getInt(String prompt) {
+    public int getInt(String prompt) {
         System.out.println(prompt);
-        getInt();
+        return getInt();
     }
 
     public double getDouble(double min, double max) {
@@ -66,8 +66,8 @@ public class Input {
         return userdouble;
     }
 
-    public void getDouble(String prompt) {
+    public double getDouble(String prompt) {
         System.out.println(prompt);
-        getDouble();
+        return  getDouble();
     }
 }
