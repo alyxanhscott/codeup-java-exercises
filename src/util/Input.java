@@ -14,9 +14,9 @@ public class Input {
         return userAnswer;
     }
 
-    public void getString(String prompt) {
+    public String getString(String prompt) {
         System.out.println(prompt);
-        getString();
+        return getString();
     }
 
     public boolean yesNo() {
@@ -24,9 +24,9 @@ public class Input {
         return "y".equalsIgnoreCase(userAnswer) || "yes".equalsIgnoreCase(userAnswer);
     }
 
-    public void yesNo(String prompt) {
+    public boolean yesNo(String prompt) {
         System.out.println(prompt);
-        yesNo();
+        return yesNo();
     }
 
     public int getInt(int min, int max) {
@@ -40,14 +40,14 @@ public class Input {
         return (usernum >= min && usernum <= max) ? usernum : getInt(prompt, min, max);
     }
 
-    public int getInt() {
+    public int getInt(int userChoice) {
         int usernum = this.sc.nextInt();
         return usernum;
     }
 
     public int getInt(String prompt) {
         System.out.println(prompt);
-        return getInt();
+        return getInt(prompt);
     }
 
     public double getDouble(double min, double max) {
