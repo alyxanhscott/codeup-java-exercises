@@ -5,6 +5,7 @@ public class Movie {
     private String name;
     private String category;
 
+
 //    constructor!!
     public Movie(String name, String category) {
         this.name = name;
