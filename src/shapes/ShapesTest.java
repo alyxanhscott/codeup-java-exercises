@@ -4,12 +4,15 @@ public class ShapesTest {
 
     public static void main(String[] args) {
 
-        Rectangle box1 = new Rectangle(4, 5);
-        Rectangle box2 = new Square(5);
-        System.out.println("R Area: " + box1.getArea());
-        System.out.println("R Perimeter: " + box1.getPerimeter());
-        System.out.println("S Area: " + box2.getArea());
-        System.out.println("S Perimeter: " + box2.getPerimeter());
+        Measurable myShape = new Quadrilateral(5, 5);
+        Measurable myShape1 = new Square(10);
+        Measurable myShape2 = new Rectangle(20, 5);
+
+
+
+        System.out.println("Shape Area: " + myShape2.getArea());
+        System.out.println("Shape Perimeter: " + myShape2.getPerimeter());
+
 
     }
 }
