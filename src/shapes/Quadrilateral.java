@@ -11,6 +11,10 @@ abstract class Quadrilateral extends Shape implements Measurable {
         this.width = width;
     }
 
+    public void potato(int x) {
+        this.px = x;
+    }
+
     public int getLength() {
         return length;
     }
