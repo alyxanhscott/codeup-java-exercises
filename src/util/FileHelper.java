@@ -2,6 +2,7 @@ package util;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
 import java.io.IOException;
@@ -25,7 +26,7 @@ public class FileHelper {
 
     public static void spit (String filename, List<String> contents) {
         try {
-            Files.write(Paths.get(filename), contents);
+            Files.write(Paths.get(filename), contents, StandardOpenOption.CREATE);
         } catch (IOException e) {
             System.out.println("Caught, something went wrong.");
             e.printStackTrace();
